@@ -1,21 +1,21 @@
 <script setup lang="ts">
 import {Howl, Howler} from 'howler';
-import {getInfo,chooseFormat} from 'ytdl-core';
+// import {getInfo,chooseFormat} from 'ytdl-core';
 
-getInfo("https://music.youtube.com/watch?v=paCm-W8EURI")
-.then((info) => {
-  // filterFormats(info.formats, "audioonly")
-  const audioFormat = chooseFormat(info.formats, {
-    quality: "highestaudio"
-  })
-  console.log(audioFormat)
-})
+// getInfo("https://music.youtube.com/watch?v=paCm-W8EURI")
+// .then((info) => {
+//   // filterFormats(info.formats, "audioonly")
+//   const audioFormat = chooseFormat(info.formats, {
+//     quality: "highestaudio"
+//   })
+//   console.log(audioFormat)
+// })
 
-var sound = new Howl({
-  src: ['sound.mp3']
-});
+// var sound = new Howl({
+//   src: ['sound.mp3']
+// });
 
-sound.play();
+// sound.play();
 
 </script>
 <template>
